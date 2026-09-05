@@ -58,15 +58,20 @@
       margin: 0 auto 20px;
     }
 
-    .promocion {
-      display: inline-block;
-      background: var(--azul);
-      color: var(--blanco);
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-bottom: 25px;
-    }
+    .promo {
+  display: inline-block;
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
 
     model-viewer {
       width: 100%;
@@ -164,10 +169,15 @@
         en alta definición, ideal para estudiar, trabajar y comunicarte en línea.
       </p>
 
-      <div class="promocion" href="https://www.amazon.com.mx/Logitech-Webcam-Resoluci%C3%B3n-FullHD-1080p/dp/B006JH8T3S/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AGW1NPYWQAH0&dib=eyJ2IjoiMSJ9.LZkTh-2t-r0hhWdlF-AlS4PsZP0gi-tPldjFvGv742xXQOg6DM4H22AsGzazl041G0dBD5EcF5EjEgx2Y1SAEbP_lMztYYikdUu2tQETx_MSRkFbEBpwWepJuG0cWOlBnoQbsKW6RDfJmndAM6ITFpHHNuaib9e4j1zVBMSt_SrLXhrKrqtR5zVnwGssPZZyGNQPLM_boVWKrv3a_DnVFm4-2HDz47UnMPadY7XGZgKAAPBsdcjrb_IMuljKoddy-HshOFowTLlHnmSQZT2PAV11YLTM8pAtTYPIV26ZhEg.MdI2RtYjMCNdlLw6YFJHs38qfIUAs5EMaekRGGEAazw&dib_tag=se&keywords=logitech%2B1080&qid=1788620237&sprefix=logitech%2B1080%2Caps%2C250&sr=8-5&ufe=app_do%3Aamzn1.fos.1f47693a-e1a6-4b06-ba29-28033858cf82&th=1">
-          Antes: <s>$300.000 COP</s><br>
-	Ahora: <strong>$150.000 COP</strong>
-      </div>
+      <a
+  class="promo"
+  href="https://www.amazon.com.mx/Logitech-Webcam-Resoluci%C3%B3n-FullHD-1080p/dp/B006JH8T3S/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AGW1NPYWQAH0&dib=eyJ2IjoiMSJ9.LZkTh-2t-r0hhWdlF-AlS4PsZP0gi-tPldjFvGv742xXQOg6DM4H22AsGzazl041G0dBD5EcF5EjEgx2Y1SAEbP_lMztYYikdUu2tQETx_MSRkFbEBpwWepJuG0cWOlBnoQbsKW6RDfJmndAM6ITFpHHNuaib9e4j1zVBMSt_SrLXhrKrqtR5zVnwGssPZZyGNQPLM_boVWKrv3a_DnVFm4-2HDz47UnMPadY7XGZgKAAPBsdcjrb_IMuljKoddy-HshOFowTLlHnmSQZT2PAV11YLTM8pAtTYPIV26ZhEg.MdI2RtYjMCNdlLw6YFJHs38qfIUAs5EMaekRGGEAazw&dib_tag=se&keywords=logitech%2B1080&qid=1788620237&sprefix=logitech%2B1080%2Caps%2C250&sr=8-5&ufe=app_do%3Aamzn1.fos.1f47693a-e1a6-4b06-ba29-28033858cf82&th=1"
+  target="_blank"
+  rel="noopener"
+>
+  Antes: <s>$300.000 COP</s><br>
+  Ahora: <strong>$150.000 COP</strong>
+</a>
 
       <model-viewer
         src="modelo.glb"
